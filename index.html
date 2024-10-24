@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chilli's Restaurant</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            background-color: #c8102e;
+        }
+        .navbar-brand, .navbar-nav .nav-link {
+            color: white !important;
+        }
+        .hero {
+            background-image: url('https://example.com/chillis-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .menu-item {
+            margin-bottom: 30px;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+        .footer-icons a {
+            color: white;
+            margin: 0 10px;
+        }
+        .custom-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Chilli's</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="text-background">
+            <h1>Welcome to Chili's</h1>
+            <a href="#menu" class="btn btn-custom btn-lg">View Menu</a>
+        </div>
+    </div>
+    
+    <style>
+        .hero {
+            background-image: url('https://chilis.com.mx/assets/img/menu-digital/chilis-tres-para-mi-abril-2.jpg'); /* Main background */
+            background-size: cover;
+            background-position: center;
+            height: 70vh; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(241, 218, 218, 0.7);
+            position: relative; 
+        }
+    
+        .text-background {
+            position: absolute; 
+            top: 20%; 
+            left: 0;
+            right: 0; 
+            padding: 20px; 
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px; 
+        }
+    </style>
+    
+    
+
+    <!-- Menu Section -->
+    <div class="container my-5" id="menu">
+        <h2 class="text-center mb-4">Our Menu</h2>
+        <div class="custom-grid">
+            <div class="menu-item text-center">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJZ6nJ_fLniAA4uNe65n7r7SeV4Ef3Z4neLg&s" class="img-fluid" alt="Dish 1">
+                <h3>Chili's Burger</h3>
+                <p>Juicy beef patty with fresh toppings.</p>
+                <p>$12.00</p>
+            </div>
+            <div class="menu-item text-center">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvZuyfai8n0o2Vk8dVtJwnfeP31d7fgK5FBA&s" class="img-fluid" alt="Dish 2">
+                <h3>Spicy Chicken Tacos</h3>
+                <p>Flavorful tacos with a spicy twist.</p>
+                <p>$10.00</p>
+            </div>
+            <div class="menu-item text-center">
+                <img src="https://olo-images-live.imgix.net/df/df23d2e735d64bce935e7f18a842256f.jpg?auto=format%2Ccompress&q=60&cs=tinysrgb&w=1200&h=800&fit=fill&fm=png32&bg=transparent&s=dffad4f12376eb78994b7e64418003d7" class="img-fluid" alt="Dish 3">
+                <h3>Grilled Veggie Platter</h3>
+                <p>A colorful selection of grilled vegetables.</p>
+                <p>$9.00</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <div class="container my-5" id="about">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="https://www.tekiano.com/wp-content/uploads/2016/09/chilis.jpg" class="img-fluid" alt="About Chilli's">
+            </div>
+            <div class="col-md-6">
+                <h2>About Us</h2>
+                <p>At Chili's, we pride ourselves on serving mouth-watering dishes made with the freshest ingredients. Join us for a delightful culinary experience!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="container my-5" id="contact">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-danger">Submit</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p> Chilli's Restaurant. All rights reserved!</p>
+            <div class="footer-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.11/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
+
+
+
